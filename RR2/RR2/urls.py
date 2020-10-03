@@ -1,4 +1,4 @@
-"""RR1 URL Configuration
+"""RR2 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -19,5 +19,10 @@ from course import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('learndj/', views.learn_django)
+    path('', views.index),
+    path('learndj/', views.learn_django),
+    path('learnpy/', views.learn_python),
+    path('learnvar/', views.learn_var),
+    path('learnmath/', views.learn_math),
+    path('learnformat/', views.learn_format)
 ]
